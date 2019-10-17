@@ -18,16 +18,24 @@ public class Main2Activity extends AppCompatActivity {
         WisataItem wisataItem = intent.getParcelableExtra("Example Item");
 
         int imageRes = wisataItem.getImageResource();
-        String line1 = wisataItem.getNama();
-        String line2 = wisataItem.getHarga();
+        String nama = wisataItem.getNama();
+        String harga = wisataItem.getHarga();
+        String alamat = wisataItem.getAlamat();
+        String desc = wisataItem.getDesc();
 
         ImageView imageView = findViewById(R.id.image_activity2);
         imageView.setImageResource(imageRes);
 
-        TextView textView1 = findViewById(R.id.text1_activity2);
-        textView1.setText(line1);
+        TextView tvNama = findViewById(R.id.tv_nama2);
+        tvNama.setText(nama);
 
-        TextView textView2 = findViewById(R.id.text2_activity2);
-        textView2.setText(line2);
+        TextView tvHarga = findViewById(R.id.tv_harga2);
+        tvHarga.setText(harga);
+
+        TextView tvAlamat = findViewById(R.id.tv_alamat2);
+        tvAlamat.setText(alamat);
+
+        TextView tvDesc = findViewById(R.id.tv_deskripsi2);
+        tvDesc.setText(desc);
     }
 }
