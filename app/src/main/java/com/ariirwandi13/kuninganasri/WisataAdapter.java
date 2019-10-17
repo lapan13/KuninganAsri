@@ -38,6 +38,7 @@ public class WisataAdapter extends RecyclerView.Adapter<WisataAdapter.WisataView
         holder.mTvNama.setText(currentItem.getNama());
         holder.mTvHarga.setText(currentItem.getHarga());
         holder.mTvAlamat.setText(currentItem.getAlamat());
+        holder.mTvDesc.setText(currentItem.getDesc());
     }
 
     @Override
@@ -54,6 +55,7 @@ public class WisataAdapter extends RecyclerView.Adapter<WisataAdapter.WisataView
         public TextView mTvNama;
         public TextView mTvHarga;
         public TextView mTvAlamat;
+        public TextView mTvDesc;
 
         public WisataViewHolder(View itemView, final OnItemClickListener listener) {
             super(itemView);
@@ -61,6 +63,7 @@ public class WisataAdapter extends RecyclerView.Adapter<WisataAdapter.WisataView
             mTvNama = itemView.findViewById(R.id.tv_nama);
             mTvHarga = itemView.findViewById(R.id.tv_harga);
             mTvAlamat = itemView.findViewById(R.id.tv_alamat);
+            mTvDesc = itemView.findViewById(R.id.tv_deskripsi);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

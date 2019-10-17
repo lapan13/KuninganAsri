@@ -19,12 +19,14 @@ public class WisataItem implements Parcelable {
     private String mTextNama;
     private String mTextHarga;
     private String mTextAlamat;
+    private String mTextDesc;
 
-    public WisataItem(int imageResource, String nama, String harga, String alamat) {
+    public WisataItem(int imageResource, String nama, String harga, String alamat, String desc) {
         mImageResource = imageResource;
         mTextNama = nama;
         mTextHarga = harga;
         mTextAlamat = alamat;
+        mTextDesc = desc;
     }
 
     protected WisataItem(Parcel in) {
@@ -32,6 +34,7 @@ public class WisataItem implements Parcelable {
         mTextNama = in.readString();
         mTextHarga = in.readString();
         mTextAlamat = in.readString();
+        mTextDesc = in.readString();
     }
 
     public int getImageResource() {
@@ -50,6 +53,10 @@ public class WisataItem implements Parcelable {
         return mTextAlamat;
     }
 
+    public String getDesc() {
+        return mTextDesc;
+    }
+
     @Override
     public int describeContents() {
         return 0;
@@ -61,6 +68,7 @@ public class WisataItem implements Parcelable {
         dest.writeString(mTextNama);
         dest.writeString(mTextHarga);
         dest.writeString(mTextAlamat);
+        dest.writeString(mTextDesc);
     }
 }
 
