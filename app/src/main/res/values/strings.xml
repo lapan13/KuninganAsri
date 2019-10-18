@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Kuningan Asri</string>
     <string name="htm">harga tiket masuk :</string>
+    <string name="tentang">Aplikasi ini dibuat untuk memenuhi submission MADE Dicoding</string>
+    <string name="versi">Version 1.0.0</string>
 </resources>
