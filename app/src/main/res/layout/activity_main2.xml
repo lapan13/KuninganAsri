@@ -65,15 +65,23 @@
                 android:textColor="@android:color/black" />
 
             <TextView
-                android:id="@+id/htm2"
+                android:id="@+id/tv_alamat2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tv_nama2"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/htm2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_alamat2"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
-                android:text="@string/htm"
-                android:textStyle="italic" />
+                android:text="@string/htm" />
 
             <TextView
                 android:id="@+id/tv_harga2"
@@ -88,20 +96,10 @@
                 android:textColor="@android:color/black" />
 
             <TextView
-                android:id="@+id/tv_alamat2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tv_harga2"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
-                android:textStyle="italic" />
-
-            <TextView
                 android:id="@+id/tv_deskripsi2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tv_alamat2"
+                android:layout_below="@id/tv_harga2"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:layout_marginBottom="16dp"
