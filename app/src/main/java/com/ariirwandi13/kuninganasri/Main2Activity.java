@@ -22,7 +22,7 @@ public class Main2Activity extends AppCompatActivity {
         collapsingToolbarLayout.setTitleEnabled(false);
 
         Toolbar toolbar = findViewById(R.id.toolbar2);
-        setSupportActionBar(toolbar);
+        toolbar.setTitle("Deskripsi");
 
         collapsingToolbarLayout.setCollapsedTitleTextColor(
                 ContextCompat.getColor(this, R.color.white));
