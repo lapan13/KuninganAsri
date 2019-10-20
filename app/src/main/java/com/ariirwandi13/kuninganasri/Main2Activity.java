@@ -2,6 +2,7 @@ package com.ariirwandi13.kuninganasri;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -20,17 +21,23 @@ public class Main2Activity extends AppCompatActivity {
 
         CollapsingToolbarLayout collapsingToolbarLayout = findViewById(R.id.collapsing_toolbar);
         collapsingToolbarLayout.setTitleEnabled(false);
-
-        Toolbar toolbar = findViewById(R.id.toolbar2);
-        toolbar.setTitle("Deskripsi");
-
         collapsingToolbarLayout.setCollapsedTitleTextColor(
                 ContextCompat.getColor(this, R.color.white));
         collapsingToolbarLayout.setExpandedTitleColor(
                 ContextCompat.getColor(this, R.color.colorPrimary));
 
+        Toolbar toolbar = findViewById(R.id.toolbar2);
+        setSupportActionBar(toolbar);
+        setTitle("");
+
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayShowHomeEnabled(true);
+        }
+
         Intent intent = getIntent();
         WisataItem wisataItem = intent.getParcelableExtra("Example Item");
+
 
         int imageRes = wisataItem.getImageResource();
         String nama = wisataItem.getNama();
@@ -52,5 +59,15 @@ public class Main2Activity extends AppCompatActivity {
 
         TextView tvDesc = findViewById(R.id.tv_deskripsi2);
         tvDesc.setText(desc);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
