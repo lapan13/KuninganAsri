@@ -27,8 +27,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@android:drawable/screen_background_dark_transparent"
-                android:foreground="?android:attr/selectableItemBackgroundBorderless">
+                android:background="@android:drawable/screen_background_dark_transparent">
             </RelativeLayout>
 
             <TextView
@@ -39,7 +38,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginRight="16dp"
-                android:textColor="@android:color/white"
+                android:textColor="@color/white"
                 android:textStyle="bold"
                 tools:text="nama wisata" />
 
@@ -53,9 +52,9 @@
                 android:layout_marginBottom="8dp"
                 android:ellipsize="end"
                 android:maxLines="1"
+                android:textColor="@color/white"
                 android:drawableStart="@drawable/ic_place_white"
                 android:drawablePadding="4dp"
-                android:textColor="@android:color/white"
                 tools:text="alamat" />
 
             <TextView
@@ -67,6 +66,7 @@
                 android:layout_marginEnd="8dp"
                 android:text="@string/htm"
                 android:textAlignment="textEnd"
+                android:textColor="@color/white"
                 android:visibility="gone"
                 tools:text="htm :" />
 
@@ -79,7 +79,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="8dp"
                 android:layout_alignParentEnd="true"
-                android:background="@drawable/shape_text"
+                android:background="@drawable/shape"
                 android:paddingStart="4dp"
                 android:paddingTop="2dp"
                 android:paddingEnd="4dp"
@@ -96,6 +96,7 @@
                 android:layout_marginEnd="16dp"
                 android:ellipsize="end"
                 android:maxLines="2"
+                android:textColor="@color/white"
                 android:visibility="gone"
                 tools:text="deskripsi" />
 

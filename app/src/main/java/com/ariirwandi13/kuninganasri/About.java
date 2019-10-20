@@ -17,7 +17,8 @@ public class About extends AppCompatActivity {
         toolbar.setTitle("About");
         setSupportActionBar(toolbar);
 
-        if (getSupportActionBar() != null) {
+        // add back arrow to toolbar
+        if (getSupportActionBar() != null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
@@ -25,11 +26,11 @@ public class About extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+        // handle arrow click here
         if (item.getItemId() == android.R.id.home) {
-            finish();
+            finish(); // close this activity and return to preview activity (if there is any)
         }
 
         return super.onOptionsItemSelected(item);
     }
 }
-

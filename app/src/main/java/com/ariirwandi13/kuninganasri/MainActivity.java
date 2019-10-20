@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        Toast.makeText(this, "About", Toast.LENGTH_SHORT)
+        Toast.makeText(this, "About Me", Toast.LENGTH_SHORT)
                 .show();
 
         Intent intent = new Intent(this, About.class);
