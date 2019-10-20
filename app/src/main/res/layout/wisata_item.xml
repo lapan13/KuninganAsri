@@ -22,12 +22,14 @@
                 android:layout_height="match_parent"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
+                tools:ignore="contentDescription"
                 tools:src="@color/colorPrimary" />
 
             <RelativeLayout
+                android:id="@+id/layer"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@android:drawable/screen_background_dark_transparent"></RelativeLayout>
+                android:background="@android:drawable/screen_background_dark_transparent" />
 
             <TextView
                 android:id="@+id/tv_nama"
