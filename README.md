@@ -1,3 +1,3 @@
 # KuninganAsri
 Project Dicoding
-Aplikasi sederhana tentang tempat wisata di Kuningan
+/n Aplikasi sederhana tentang tempat wisata di Kuningan
